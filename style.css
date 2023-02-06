@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+body {
+  background-color: #25ccf7;
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Roboto Slab', serif;
+  background-image: url(cool-background\ \(2\).png);
+
+}
+
+.note {
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  margin: 30px;
+  border-radius: 15px;
+  position: relative;
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+.heading {
+  background-color: black;
+  color: black;
+  background-color: #9aecdb;
+  height: 50px;
+  width: 400px;
+  padding: 10px;
+  gap: 25px;
+  justify-content: end;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.heading i {
+  cursor: pointer;
+  font-size: 25px;
+}
+.heading i:hover {
+  transform: scale(1.3);
+  transition: 0.2s ease-in-out;
+}
+.note textarea {
+  height: 400px;
+  width: 400px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 1.5rem;
+  resize: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+} 
+::placeholder { 
+  color: rgb(136, 83, 206);font-size: 24px;
+}
+
+#btn {
+  font-size: 2rem;
+  height: 60px;
+  width: 60px;
+  color:#f368e0;
+  border-radius: 50%;
+  border: 2px solid green;
+  position: fixed;
+  bottom: 35px;
+  right: 30px;
+}
+#btn:hover {
+  cursor: pointer;
+  background-color: #7166a4;
+  transition: 0.2s ease-in-out;
+}
+
+/* Media Queries */
+@media screen and (max-width: 992px) {
+  .heading {
+    height: 50px;
+    width: 300px;
+  }
+  .note {
+    height: 300px;
+    width: 300px;
+  }
+  .note textarea {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 715px){
+ .heading {
+    height: 50px;
+    width: 400px;
+  }
+  .note {
+    height: 350px;
+    width: 400px;
+  }
+  .note textarea {
+    width: 400px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .heading {
+    width: 330px;
+    /* height: 200px; */
+  }
+  .note {
+    height: 300px;
+    width: 330px;
+  }
+  .note textarea {
+    font-size: 1.5rem;
+      width: 330px;
+  }
+}
+@media screen and (max-width: 395px){
+   .heading {
+    width: 300px;
+    /* height: 200px; */
+  }
+  .note {
+    height: 300px;
+    width: 300px;
+  }
+  .note textarea {
+    font-size: 1.5rem;
+      width: 300px;
+  }
+}
